@@ -1,0 +1,278 @@
+/* reseteo de estilos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    padding: 50px;
+    background-color: #333;
+}
+.calendar-container{
+    display: flex;
+    height: 1200px;
+    outline: 1px solid rgb(145, 145, 145);
+    background-color: #5c5c5c;
+}
+
+.time-bar{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    outline: 1px solid rgb(145, 145, 145);
+    background-color: #4c4c4c;
+}
+
+/* selector hijo directo */ 
+/* span dentro de un elemento con clase time-bar */
+.time-bar > span{
+    border-bottom: dashed 1px rgb(145, 145, 145);
+    flex-grow: 1;
+    font-size: 12px;
+    color: #cccccc;
+    padding-left: 50px;
+    padding-top: 55%;
+}
+
+.week{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+
+.day-column{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid rgb(110, 110, 110);
+}
+
+.day-header{
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    background-color: #514b4b;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    outline: 1px solid rgb(145, 145, 145);
+    height: 40px;
+}
+
+.day-content{
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    
+}
+
+.actividad1{
+    background-color: #716b6b;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    height: 220px;
+    top: 40px;
+    left: 3px;
+    text-align: center;
+    right: 3px;
+ 
+    
+}
+.actividad2{
+    background-color: #716b6b;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    height: 220px;
+    top: 40px;
+    left: 3px;
+    text-align: center;
+    right: 3px;
+}
+.actividad3{
+    background-color: #716b6b;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    height: 520px;
+    top: 40px;
+    left: 3px;
+    text-align: center;
+    right: 3px;
+}
+.actividad4{
+    background-color: #470000;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    height: 168px;
+    top: 623px;
+    left: 3px;
+    text-align: center;
+    right: 3px;
+}
+
+.actividad5{
+    background-color: #470000;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    height: 220px;
+    top: 826px;
+    left: 3px;
+    text-align: center;
+    right: 3px;
+}
+
+.actividad6{
+    background-color: #716b6b;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    height: 530px;
+    top: 40px;
+    left: 3px;
+    text-align: center;
+    right: 3px;
+}
+
+.actividad13{
+    background-color: #716b6b;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    height: 330px;
+    top: 40px;
+    left: 3px;
+    text-align: center;
+    right: 3px;
+}
+
+.actividad7{
+    background-color: #470000;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    height: 270px;
+    top: 623px;
+    left: 3px;
+    text-align: center;
+    right: 3px;
+}
+
+.actividad8{
+    background-color: #8b9407;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    height: 720px;
+    top: 40px;
+    left: 3px;
+    text-align: center;
+    right: 3px;
+
+}
+
+.actividad9{
+    background-color: #8b9407;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    height: 720px;
+    top: 40px;
+    left: 3px;
+    text-align: center;
+    right: 3px;
+}
+
+
+.actividad10{
+    background-color: #079415;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    height: 320px;
+    top: 263px;
+    left: 3px;
+    text-align: center;
+    right: 3px;
+}
+
+.actividad11{
+    background-color: #079415;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    height: 320px;
+    top: 263px;
+    left: 3px;
+    text-align: center;
+    right: 3px;
+}
+
+.actividad12{
+    background-color: #079415;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    height: 200px;
+    top: 373px;
+    left: 3px;
+    text-align: center;
+    right: 3px;
+    
+}
+.actividad16{
+    background-color: #716b6b;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    height: 330px;
+    top: 40px;
+    left: 3px;
+    text-align: center;
+    right: 3px;
+    
+}
+
+.actividad13{
+    background-color: #8b9407;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    height: 40px;
+    top: 575px;
+    left: 3px;
+    text-align: center;
+    right: 3px;
+}
+
+.actividad14{
+    background-color: #8b9407;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    height: 120px;
+    top: 765px;
+    left: 3px;
+    text-align: center;
+    right: 3px;
+}
+
+.actividad15{
+    background-color: #8b9407;
+    color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    height: 250px;
+    top: 895px;
+    left: 3px;
+    text-align: center;
+    right: 3px;
+}

@@ -1,0 +1,62 @@
+/* reseteo de estilos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 800px;
+    height: 400px;
+    /* me permite poner un borde, pero no afecta al tamaño del contenedor */
+    outline: 1px solid black;
+
+}
+
+.item{
+    outline: 1px red ridge;
+    /* width: 100px; */
+    flex-basis: 100px;
+    height: 100px;
+    
+}
+
+.item:nth-child(1){
+    background-color: lightgreen;
+    /* permite determinar el orden de los elementos */
+    order: 3;
+    /* permite que el elemento crezca para ocupar el espacio disponible */
+    /* el contenedor tiene un tamaño de 800px flex hace el calculo */
+    /* tamaño = 600px - (100px * 5) = 100px */
+    /* cuanto le toca a cada uno = 100px / 5 = 20px */
+    /* en total a cada uno le toca 20px */
+    flex-grow: 1;
+}
+.item:nth-child(2){
+    background-color: rgb(115, 189, 115);
+    order: 2;
+    /* flex-grow total es igual al tamaño 6 */
+    /* en este caso el calculo es diferente = 100px / 6 = 16.667 */
+    /* 16.667px * 2 = 33.333px */
+    flex-grow: 2;
+
+}
+.item:nth-child(3){
+    background-color: rgb(87, 143, 87);
+    order: 1;
+    flex-grow: 1;
+
+}
+.item:nth-child(4){
+    background-color: rgb(59, 97, 59);
+    flex-grow: 1.5;
+
+}
+
+.item:nth-child(5){
+    background-color: rgb(40, 65, 40);
+    flex-grow: 0.5;
+
+}

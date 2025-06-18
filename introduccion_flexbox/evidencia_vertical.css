@@ -7,11 +7,11 @@
 .container {
     display: flex;
     width: 700px;
-    height: 800px;
+    height: 600px;
     flex-flow: column wrap;
     justify-content: space-evenly;
-    border-left: #0b4100 dashed 2px;
-    background-color: blueviolet;
+    border-left: #0b4100 dashed 5px;
+    background-color: blue;
 }
 
 .item{

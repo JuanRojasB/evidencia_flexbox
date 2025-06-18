@@ -1,0 +1,59 @@
+/* reseteo de estilos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 300px;
+    height: 400px;
+    outline: 1px solid black;
+    color: #fff;
+
+}
+
+.item{
+    outline: 1px red ridge;
+    /* width: 100px; */
+    /* suma basis = 400px */
+    /* espacio faltante es 400px - 300px = 100px */
+    /* espacio faltante por cada uno = 100px / 6.5 = 15.38px */
+    flex-basis: 100px;
+    height: 100px;
+    
+}
+
+.item:nth-child(1){
+    background-color: rgb(39, 43, 245);
+    /* flex-shrink por defecto a 1 */
+    /* 15.38px * 2 = 30.77px */
+    /* 100px - 30.76px = 69.23px */
+
+    /* aglutinador flex: shorthand flex grow, flex shrink, flex basis */
+    flex-basis: 2 2 100px;
+}
+
+.item:nth-child(2){
+    background-color: rgb(30, 33, 201);
+    /* 15.38px * 0.5 = 7.7px */
+    /* 100px - 7.7px = 92.3px */
+    flex-shrink: 0.5;
+
+
+}
+
+.item:nth-child(3){
+    background-color: rgb(18, 20, 158);
+    flex-shrink: 3;
+
+
+}
+
+.item:nth-child(4){
+    background-color: rgb(26, 14, 95);
+    flex-shrink: 1;
+
+}

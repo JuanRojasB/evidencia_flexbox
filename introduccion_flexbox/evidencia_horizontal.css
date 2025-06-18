@@ -10,7 +10,7 @@
     height: 400px;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    border-bottom: #0b4100 dashed 2px;
+    border-bottom: #0b4100 dashed 5px;
     background-color: blueviolet;
 }
 
@@ -56,5 +56,6 @@
     background-color: lightblue;
 
 }
+
 
 
